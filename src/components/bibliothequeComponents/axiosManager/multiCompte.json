@@ -1,0 +1,44 @@
+{
+    "result":
+    [
+        {
+            "id":"149",
+            "enabled":"1",
+            "email":"john.xerri@linkt.fr",
+            "prenom":"John",
+            "nom":"Sais rien",
+            "id_role":"11",
+            "name":"1000010_administrateurs",
+            "id_client":"23156"
+        },{
+            "id":"597",
+            "enabled":"1",
+            "email":"lucien.brouillaud@linkt.fr",
+            "prenom":"Lucien",
+            "nom":"Brouillaud",
+            "id_role":"11",
+            "name":"1000010_administrateurs",
+            "id_client":"23156"
+        },{
+            "id":"597",
+            "enabled":"1",
+            "email":"lucien.brouillaud@linkt.fr",
+            "prenom":"Lucien",
+            "nom":"Brouillaud",
+            "id_role":"457",
+            "name":"1000326_utilisateurs",
+            "id_client":"23535"
+        },{
+            "id":"597",
+            "enabled":"1",
+            "email":"lucien.brouillaud@linkt.fr",
+            "prenom":"Lucien",
+            "nom":"Brouillaud",
+            "id_role":"13",
+            "name":"1000014_administrateurs",
+            "id_client":"23160"
+        }
+    ],
+    "sqlRequest":
+    "SELECT dbo.[User].[id], dbo.[User].[enabled], dbo.[User].[email], dbo.[User].[prenom], dbo.[User].[nom], dbo.[Role_User].[id_role], dbo.[Role].[name], dbo.[Role].[id_client] FROM dbo.[User]\r\n\r\n        LEFT JOIN dbo.[Role_User]\r\n        ON dbo.[User].[id] = dbo.[Role_User].[id_user]\r\n        LEFT JOIN dbo.[Role]\r\n        ON dbo.[Role].[id] = dbo.[Role_User].[id_role]\r\n\r\n        WHERE dbo.[User].[email]\r\n        IN ('brouillaud','john.xerri@linkt.fr')\r\n        OR dbo.[User].[nom]\r\n        IN ('brouillaud','john.xerri@linkt.fr')\r\n        OR dbo.[User].[prenom]\r\n        IN ('brouillaud','john.xerri@linkt.fr')"
+}

@@ -1,0 +1,236 @@
+body {
+  background-color: #e9e9e9!important;
+  font-family: 'Quicksand', Arial, Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  margin: 0;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+  padding-left: 305px;
+}
+
+.App-header .accueil {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.leftColumn {
+  background-color: #fff!important;
+  border-right: 1px solid #282c34!important;
+  top: 32px;
+  bottom: 0;
+  height: auto;
+  position: fixed!important;
+}
+.leftColumn a {
+  color: #282c34!important;
+  text-align: center!important;
+  font-size: 18px;
+  font-weight: bold!important;
+  z-index: 13;
+}
+
+.rightColumn {
+  /* background-color: #e9e9e9; */
+  padding-left: 0!important;
+  padding-right: 0!important;
+  width: 100%;
+}
+
+.row {
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
+
+/* NAVBAR */
+.navbar {
+  font-family: "Quicksand", sans-serif;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+  position: sticky!important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #031931;
+  text-align: center;
+  line-height: 32px;
+  min-height: 32px;
+  max-height: 32px;
+  margin-bottom: 0;
+}
+.navbar .container-fluid {
+  height: 100%;
+}
+.navbar-header {
+  width: inherit;
+}
+.bars {
+  color: #fff;
+}
+.navbar-header .bars {
+  float: left;
+  text-decoration: none;
+}
+.navbar .navbar-brand {
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-weight: bolder;
+  float: none;
+  height: 50px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+}
+.selector-navabar {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.navbar .navbar-user-dropdown {
+  cursor: pointer;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  font-size: 14px;
+}
+.navbar .navbar-user-dropdown a {
+  color: #fff!important;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+.pull-left {
+  float: left !important;
+}
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.sidebar {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: "Quicksand", sans-serif;
+  background: #031931;
+  width: 300px;
+  display: inline-block;
+  left: 0;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 12 !important;
+}
+.sidebar .image {
+  display: flex;
+  justify-content: center;
+  height: 86px;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #FFF;
+}
+.sidebar .image .legal {
+  background-color: orangered;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -25px;
+  padding: 0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+  display: flex;
+  z-index: 15;
+  align-items: center;
+}
+.sidebar .legal {
+  position: absolute;
+  border-top: 1px solid #eee;
+  padding: 1.8rem;
+  overflow: hidden;
+}
+.sidebar .image .legal img {
+  width: 100%;
+  margin: auto;
+}
+.reseaux-sociaux {
+  background: #031931;
+  padding: 1.2rem 2rem;
+  font-size: 1.2em;
+  color: #818181;
+  position: absolute;
+  height: 98px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.reseaux-sociaux .liens {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

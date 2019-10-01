@@ -1,0 +1,124 @@
+.page-loader-wrapper {
+    z-index: 99999999;
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(238, 238, 238, 0.75);
+    overflow: hidden;
+    text-align: center;
+}
+
+.page-loader-wrapper.transparent {
+    display: block!important;
+    background: rgba(0, 0, 0, .3)!important;
+}
+
+.page-loader-wrapper p {
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+.page-loader-wrapper .loader {
+    position: relative;
+    /* top: calc(50% - 30px); */
+    top: calc(30% - 30px);
+}
+
+.loader{
+    opacity: 1;
+}
+
+.loader-linkt {
+    opacity: .7;
+    height: 20rem;
+    width: 20rem;
+    margin: 0 auto;
+    position: relative;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: loaderLinkt;
+}
+@keyframes loaderLinkt {
+    from {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.loader-linkt-p {
+    width: 20rem;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+}
+.loader-linkt .bar-1, .loader-linkt .bar-2, .loader-linkt .bar-3, .loader-linkt .bar-4 {
+    position: absolute;
+    height: 2.6rem;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+}
+.loader-linkt .bar-1 {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    left: 0rem;
+    top: 9rem;
+    z-index: 2;
+}
+.loader-linkt .bar-2 {
+    top: 6.2rem;
+    left: 3rem;
+    right: 3rem;
+    z-index: 4;
+}
+.loader-linkt .bar-3 {
+    z-index: 2;
+    left: 6rem;
+    top: 9rem;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.loader-linkt .bar-4 {
+    left: 3rem;
+    right: 3rem;
+    top: 11.8rem;
+    z-index: 4;
+}
+.bg-linkt-l {
+    background-color: #7bc6bc;
+}
+.bg-linkt-i {
+    background-color: #48b77d;
+    color: #FFF;
+}
+.bg-linkt-n {
+    background-color: #4BBABB;
+}
+.bg-linkt-r {
+    background-color: #EA504C;
+}
+.bg-linkt-g {
+    background-color: rgb(150, 148, 148);
+}
+.bg-linkt-k {
+    background-color: #008da2;
+}
+.bg-linkt-t {
+    background-color: #a9d249;
+    color: #fff;
+}

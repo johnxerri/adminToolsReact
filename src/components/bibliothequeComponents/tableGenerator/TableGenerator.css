@@ -1,0 +1,16 @@
+.tableGenerator {
+    margin-top: 2rem;
+    font-size: initial;
+}
+.table thead th {
+    vertical-align: middle!important;;
+    text-align: center!important;
+}
+.table td {
+    vertical-align: middle!important;
+}
+.table .fa-times {
+    color: #f00;
+    font-weight: bold;
+    font-size: 2rem;
+}
